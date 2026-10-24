@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expat Form Map: Argentina</title>
+<meta name="description" content="Free one-page map of the US tax forms that usually apply to Americans living in Argentina, tax year 2026.">
+<style>
+  :root { --bg:#faf8f4; --panel:#fff; --ink:#1b1d22; --muted:#5d6170; --line:#e6e1d8; --accent:#1f5fbf; --soft:#eaf1fb; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#121418; --panel:#1b1e24; --ink:#eef0f4; --muted:#a2a7b4; --line:#2c3039; --accent:#6ea2ff; --soft:#18243a; } }
+  @media print { :root { --bg:#fff; --panel:#fff; --ink:#000; --muted:#333; --line:#bbb; --accent:#000; --soft:#f2f2f2; } .noprint { display:none; } body { font-size: 12px; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { background: var(--soft); font-size: 13px; text-transform: uppercase; letter-spacing: .05em; }
+  td:first-child { font-weight: 700; white-space: nowrap; }
+  .scroll { overflow-x: auto; }
+  h2 { font-size: 18px; margin: 26px 0 10px; }
+  ul { margin: 0; padding-left: 20px; }
+  .box { background: var(--soft); border-radius: 10px; padding: 14px 16px; margin-top: 18px; }
+  .fine { font-size: 12.5px; color: var(--muted); margin-top: 22px; }
+  a { color: var(--accent); }
+  button { font: inherit; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>The Expat Form Map: Argentina</h1>
+  <p class="sub">Which US tax forms usually apply to a US citizen living in Argentina. Tax year 2026, filed in 2027.</p>
+  <p class="noprint"><button onclick="print()">Save as PDF / print</button></p>
+
+  <div class="scroll"><table>
+    <tr><th>Form</th><th>It usually applies if…</th><th>Key number or rule</th></tr>
+    <tr><td>Form 1040</td><td>Your gross income is above the filing threshold, wherever you live and in any currency.</td><td>US citizens file on worldwide income.</td></tr>
+    <tr><td>Form 2555 (FEIE)</td><td>You want to exclude foreign <em>earned</em> income and you pass the bona fide residence test or the physical presence test.</td><td>Up to $132,900 for 2026. Physical presence = 330 full days abroad in 12 months.</td></tr>
+    <tr><td>Form 1116 (FTC)</td><td>You paid Argentine income tax (e.g. Ganancias) and want a credit instead of, or on top of, the FEIE.</td><td>How monotributo's components are treated is a question for your preparer.</td></tr>
+    <tr><td>Schedule SE</td><td>You're self-employed (freelance or monotributo) with $400+ in net earnings.</td><td>The FEIE does <strong>not</strong> reduce SE tax. The US and Argentina have <strong>no</strong> totalization agreement.</td></tr>
+    <tr><td>FBAR (FinCEN 114)</td><td>Your foreign accounts together topped $10,000 at any moment of the year.</td><td>Filed with FinCEN, not the IRS. List every account with its maximum balance.</td></tr>
+    <tr><td>Form 8938 (FATCA)</td><td>You live abroad and your foreign financial assets exceed the threshold.</td><td>Single: over $200k at year end or $300k at any time. Joint: $400k / $600k.</td></tr>
+    <tr><td>Form 1040-ES</td><td>You expect to owe tax (often self-employment tax).</td><td>Quarterly estimated payments.</td></tr>
+  </table></div>
+
+  <h2>Dates for tax year 2026</h2>
+  <ul>
+    <li><strong>Apr 15, 2027:</strong> regular due date, and the date interest starts on any tax owed.</li>
+    <li><strong>Jun 15, 2027:</strong> automatic 2-month extension to file if you live outside the US. Attach a statement saying you qualify.</li>
+    <li><strong>Oct 15, 2027:</strong> extended deadline with Form 4868. Also the automatic FBAR extension.</li>
+  </ul>
+
+  <h2>What to collect now (the 10-minute version)</h2>
+  <ul>
+    <li>Income by month, in ARS and USD, with the exchange rate you used and why.</li>
+    <li>Days in and out of the US (passport stamps, flights).</li>
+    <li>The highest balance of each foreign account during the year: banks, brokers and wallets. Ask your preparer which ones count.</li>
+    <li>Argentine taxes paid: Ganancias, monotributo receipts.</li>
+    <li>Last year's return, if you filed.</li>
+  </ul>
+
+  <div class="box"><strong>Want the full organizer?</strong> The US Expat Tax Kit (Argentina Edition) turns this into a fill-in Google Sheet plus a folder ready for your accountant. <a href="index.html">Pre-order for $29</a>.</div>
+
+  <p class="fine">General information only, not tax, legal or financial advice. Confirm your situation with a qualified professional. Sources: <a href="https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion">IRS FEIE</a> (Rev. Proc. 2025-32: $132,900 for 2026) · <a href="https://www.fincen.gov/report-foreign-bank-and-financial-accounts">FinCEN FBAR</a> · <a href="https://www.irs.gov/instructions/i8938">IRS Form 8938 instructions</a> · <a href="https://www.ssa.gov/international/agreements_overview.html">SSA international agreements</a> · <a href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad-automatic-2-month-extension-of-time-to-file">IRS 2-month extension abroad</a>.</p>
+</div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
